@@ -119,4 +119,9 @@ public class FileManagerServiceImpl implements FileManagerService {
     public Data getByCode(String code) {
         return dataRepository.findById(code).get();
     }
+
+    @Override
+    public void deleteData() {
+        dataRepository.deleteAll();
+    }
 }

@@ -14,4 +14,5 @@ public interface FileManagerService {
 
    public Data getByCode(String code);
 
+    public void deleteData();
 }
